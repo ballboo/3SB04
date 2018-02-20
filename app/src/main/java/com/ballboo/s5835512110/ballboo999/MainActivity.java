@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         if (edtTHB.getText().toString().trim().equals("")) {
             edtTHB.setError("ใส่ตัวเลขที่ต้องการคำนวณ");
         } else {
-            edtUSD.setText(String.valueOf(Double.parseDouble(edtTHB.getText().toString()) * 33.2) + " USD");
+            edtUSD.setText(String.valueOf(Double.parseDouble(edtTHB.getText().toString()) / 33.2) + " USD");
         }
     }
 }
